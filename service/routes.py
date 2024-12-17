@@ -110,9 +110,9 @@ def create_accounts():
         account.update()
 
         return account.serialize(), status.HTTP_200_OK
-######################################################################
-# DELETE AN ACCOUNT
-######################################################################
+    ######################################################################
+    # DELETE AN ACCOUNT
+    ######################################################################
     @app.route("/accounts/<int:account_id>", methods=["DELETE"])
     def delete_accounts(account_id):
         """
